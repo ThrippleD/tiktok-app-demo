@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with TikTok</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #111 0%, #222 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
+        .login-container {
+            background: rgba(34, 34, 34, 0.98);
+            padding: 3rem 2.5rem 2rem 2.5rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 350px;
+        }
+        .tiktok-logo {
+            width: 70px;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            color: #fff;
+            margin-bottom: 2.5rem;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+        .login-btn {
+            background: linear-gradient(90deg, #25f4ee, #fe2c55 70%);
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 0.9rem 2.5rem;
+            border: none;
+            border-radius: 2rem;
+            cursor: pointer;
+            transition: transform 0.1s, box-shadow 0.1s;
+            box-shadow: 0 2px 12px rgba(254,44,85,0.15);
+        }
+        .login-btn:hover {
+            transform: translateY(-2px) scale(1.04);
+            box-shadow: 0 6px 18px rgba(37,244,238,0.19);
+        }
+        .desc {
+            color: #ccc;
+            margin-top: 2.5rem;
+            text-align: center;
+            font-size: 1rem;
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img class="tiktok-logo" src="https://upload.wikimedia.org/wikipedia/commons/6/69/TikTok_logo.svg" alt="TikTok Logo" />
+        <h2>Sign in with TikTok</h2>
+        <button class="login-btn" onclick="window.location.href='login-callback.html'">
+            <svg style="vertical-align: middle; margin-right: 8px;" width="22" height="22" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="24" fill="#fff"/>
+                <path d="M27.96 14.399c.212 2.052 1.819 3.406 3.873 3.553v2.516c-1.282.098-2.478-.084-3.7-.505v6.649c0 6.593-8.74 8.382-12.069 3.2-.429-.655-.682-1.385-.743-2.151h3.524c.324 1.626 3.072 1.239 3.072-1.19v-6.758c0-1.542-1.507-2.427-3.072-2.059v-2.458c.87-.169 1.809-.252 2.759-.252.973 0 1.927.087 2.818.255v10.388c0 3.008 4.005 3.047 4.005 0V14.399z" fill="#111"/>
+                <path d="M31.833 14.295c.946.109 1.907-.074 2.816-.487v2.45a9.503 9.503 0 01-2.818-.255v-1.708z" fill="#25F4EE"/>
+                <path d="M27.96 14.399v10.388c0 3.047-4.005 3.008-4.005 0V14.399a16.99 16.99 0 012.818-.255c.95 0 1.889.083 2.759.252v2.458c-1.565-.368-3.072.517-3.072 2.059v6.758c0 2.429 2.748 2.816 3.072 1.19h3.524c-.061.766-.314 1.496-.743 2.151-3.329 5.182-12.069 3.393-12.069-3.2v-6.649c-1.222.421-2.418.603-3.7.505v-2.516c2.054-.147 3.661-1.501 3.873-3.553h3.523c.324 1.626 3.072 1.239 3.072-1.19V14.399z" fill="#FE2C55"/>
+            </svg>
+            Login with TikTok
+        </button>
+        <div class="desc">
+            Secure TikTok authentication for your personal trend analytics tool.
+        </div>
+    </div>
+</body>
+</html>
