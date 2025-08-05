@@ -1,109 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Login with TikTok</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      min-height: 100vh;
-      background: repeating-linear-gradient(135deg, #232326 0 40px, #222227 40px 80px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-    }
-    .login-card {
-      background: #19191c;
-      border-radius: 2rem;
-      box-shadow: 0 8px 40px #000a, 0 1.5px 7px #0002;
-      padding: 2.8rem 3rem 2.5rem 3rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-width: 350px;
-      max-width: 92vw;
-    }
-    .app-logo {
-      width: 70px;
-      height: 70px;
-      object-fit: contain;
-      margin-bottom: 0.8rem;
-      border-radius: 1.3rem;
-      box-shadow: 0 1px 12px #1117;
-      background: #fff;
-    }
-    h1 {
-      color: #fff;
-      margin-bottom: 1.3rem;
-      font-size: 2rem;
-      font-weight: bold;
-      text-align: center;
-      letter-spacing: 0.5px;
-    }
-    h1 .tiktok {
-      color: #00f2ea;
-      font-weight: bold;
-    }
-    .login-btn {
-      display: flex;
-      align-items: center;
-      gap: 0.7em;
-      font-size: 1.13em;
-      font-weight: bold;
-      background: linear-gradient(90deg, #00f2ea 0%, #ff0050 100%);
-      color: #fff;
-      padding: 0.7em 2em 0.7em 1.3em;
-      border: none;
-      border-radius: 100px;
-      box-shadow: 0 2px 10px #0005;
-      cursor: pointer;
-      margin-bottom: 1.2em;
-      transition: filter 0.16s;
-      text-decoration: none;
-      outline: none;
-      border: none;
-    }
-    .login-btn img {
-      width: 27px;
-      height: 27px;
-      border-radius: 6px;
-      background: #fff;
-      box-shadow: 0 2px 8px #0003;
-      padding: 3px;
-    }
-    .login-btn:hover {
-      filter: brightness(1.08) saturate(1.1);
-    }
-    .desc {
-      color: #ccccd6;
-      text-align: center;
-      font-size: 1em;
-      opacity: 0.96;
-    }
-    @media (max-width: 480px) {
-      .login-card {
-        padding: 2rem 1rem;
-        min-width: 0;
-      }
-      .app-logo { width: 52px; height: 52px; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Login with TikTok</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Inter', Arial, sans-serif;
+            background: repeating-linear-gradient(
+                135deg, #232328, #232328 20px, #1d1d22 20px, #1d1d22 40px
+            );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: #18181c;
+            border-radius: 2rem;
+            box-shadow: 0 10px 40px 0 rgba(0,0,0,0.23);
+            padding: 2.7rem 3rem 2.2rem 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 360px;
+            min-height: 370px;
+        }
+        .app-logo {
+            width: 74px;
+            height: 74px;
+            border-radius: 18px;
+            margin-bottom: 12px;
+            object-fit: contain;
+            background: #fff;
+            box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
+        }
+        .tiktok-logo {
+            width: 36px;
+            height: 36px;
+            background: #fff;
+            border-radius: 9px;
+            object-fit: contain;
+            box-shadow: 0 2px 10px 0 rgba(0,0,0,0.06);
+            margin-bottom: 5px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        h1 {
+            margin: 0 0 20px 0;
+            font-size: 2rem;
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: -1.5px;
+            text-align: center;
+        }
+        .tiktok-accent {
+            color: #16e0dd;
+            font-weight: 800;
+        }
+        .login-btn {
+            margin: 0 0 24px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 240px;
+            height: 50px;
+            background: linear-gradient(90deg, #09f1df, #e943b2 110%);
+            border: none;
+            border-radius: 25px;
+            font-size: 1.13rem;
+            font-weight: 700;
+            color: #fff;
+            cursor: pointer;
+            transition: transform .11s;
+            box-shadow: 0 2px 16px 0 rgba(233, 67, 178, 0.15);
+        }
+        .login-btn:hover {
+            transform: scale(1.045);
+            filter: brightness(1.12);
+        }
+        .desc {
+            color: #cccccc;
+            font-size: 1rem;
+            font-weight: 400;
+            margin-top: 4px;
+            text-align: center;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
-  <div class="login-card">
-    <!-- لوگوی اپ خودت -->
-    <img src="app-logo.png" alt="App Logo" class="app-logo">
+    <div class="container">
+        <!-- App logo -->
+        <img src="app-logo.png" alt="App Logo" class="app-logo" draggable="false">
 
-    <h1>Sign in with <span class="tiktok">TikTok</span></h1>
-    <a href="login-callback.html" class="login-btn">
-      <img src="tiktok-logo.png" alt="TikTok Icon">
-      Login with TikTok
-    </a>
-    <div class="desc">
-      Secure TikTok authentication for your personal trend analytics tool.
+        <!-- TikTok logo (optional) -->
+        <!-- <img src="tiktok-logo.png" alt="TikTok Logo" class="tiktok-logo"> -->
+
+        <h1>Sign in with <span class="tiktok-accent">TikTok</span></h1>
+        <button class="login-btn" onclick="location.href='login-callback.html'">
+            <img src="tiktok-logo.png" class="tiktok-logo" alt="TikTok Logo">
+            Login with TikTok
+        </button>
+        <div class="desc">
+            Secure TikTok authentication for your personal trend analytics tool.
+        </div>
     </div>
-  </div>
 </body>
 </html>
