@@ -9,50 +9,49 @@
             min-height: 100vh;
             margin: 0;
             font-family: 'Inter', Arial, sans-serif;
-            background: repeating-linear-gradient(
-                135deg, #232328, #232328 20px, #1d1d22 20px, #1d1d22 40px
-            );
+            /* BG: اولی و واقعی، subtle و جذاب */
+            background: radial-gradient(ellipse 120% 80% at 50% 40%, #22232a 80%, #18181c 100%);
             display: flex;
             align-items: center;
             justify-content: center;
         }
         .container {
             background: #18181c;
-            border-radius: 2rem;
-            box-shadow: 0 10px 40px 0 rgba(0,0,0,0.23);
-            padding: 2.7rem 3rem 2.2rem 3rem;
+            border-radius: 1.7rem;
+            box-shadow: 0 6px 38px 0 rgba(0,0,0,0.23);
+            padding: 1.9rem 2.5rem 1.7rem 2.5rem;
             display: flex;
             flex-direction: column;
             align-items: center;
-            min-width: 360px;
-            min-height: 370px;
+            min-width: 330px;
+            /* اندازه جمع‌وجور و شیک */
+            width: 330px;
         }
         .app-logo {
-            width: 74px;
-            height: 74px;
-            border-radius: 18px;
+            width: 64px;
+            height: 64px;
+            border-radius: 15px;
             margin-bottom: 12px;
             object-fit: contain;
             background: #fff;
-            box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
+            box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
         }
         .tiktok-logo {
-            width: 36px;
-            height: 36px;
+            width: 30px;
+            height: 30px;
             background: #fff;
-            border-radius: 9px;
+            border-radius: 8px;
             object-fit: contain;
-            box-shadow: 0 2px 10px 0 rgba(0,0,0,0.06);
-            margin-bottom: 5px;
+            margin-bottom: 3px;
             margin-right: 10px;
             vertical-align: middle;
         }
         h1 {
-            margin: 0 0 20px 0;
-            font-size: 2rem;
+            margin: 0 0 18px 0;
+            font-size: 1.7rem;
             color: #fff;
             font-weight: 700;
-            letter-spacing: -1.5px;
+            letter-spacing: -1.3px;
             text-align: center;
         }
         .tiktok-accent {
@@ -60,44 +59,39 @@
             font-weight: 800;
         }
         .login-btn {
-            margin: 0 0 24px 0;
+            margin: 0 0 22px 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 240px;
-            height: 50px;
+            width: 205px;
+            height: 44px;
             background: linear-gradient(90deg, #09f1df, #e943b2 110%);
             border: none;
-            border-radius: 25px;
-            font-size: 1.13rem;
+            border-radius: 22px;
+            font-size: 1.07rem;
             font-weight: 700;
             color: #fff;
             cursor: pointer;
-            transition: transform .11s;
-            box-shadow: 0 2px 16px 0 rgba(233, 67, 178, 0.15);
+            transition: transform .12s;
+            box-shadow: 0 2px 13px 0 rgba(233, 67, 178, 0.13);
         }
         .login-btn:hover {
-            transform: scale(1.045);
-            filter: brightness(1.12);
+            transform: scale(1.04);
+            filter: brightness(1.09);
         }
         .desc {
             color: #cccccc;
-            font-size: 1rem;
+            font-size: .99rem;
             font-weight: 400;
-            margin-top: 4px;
+            margin-top: 2px;
             text-align: center;
-            line-height: 1.6;
+            line-height: 1.55;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- App logo -->
         <img src="app-logo.png" alt="App Logo" class="app-logo" draggable="false">
-
-        <!-- TikTok logo (optional) -->
-        <!-- <img src="tiktok-logo.png" alt="TikTok Logo" class="tiktok-logo"> -->
-
         <h1>Sign in with <span class="tiktok-accent">TikTok</span></h1>
         <button class="login-btn" onclick="location.href='login-callback.html'">
             <img src="tiktok-logo.png" class="tiktok-logo" alt="TikTok Logo">
